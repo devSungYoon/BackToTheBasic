@@ -12,11 +12,25 @@
     <title>디스패처서블릿 테스트 페이지입니당</title>
 </head>
 <body>
-    <%--<jsp:include page="includetest.jsp"/>--%>
-    <%@include file="includetest.jsp"%>
-    <div class="tipBox">
-        <c:set var="hello" value="hello"/>
-        ${hello}
-    </div>
+<%--<jsp:include page="includetest.jsp"/>--%>
+<%@include file="includetest.jsp" %>
+<div class="tipBox">
+    Hi <c:out value="${user}" default="guest"/>
+</div>
+
+<br/>
+<%
+    String[] movieList = {"abvc", "asdfasd", "fghj", "zxcv"};
+    request.setAttribute("movieList", movieList);
+%>
+
+<table>
+    <c:forEach var="movieList" items="#{movieList}">
+        <tr>
+            <td>${movieList}</td>
+        </tr>
+    </c:forEach>
+</table>
+
 </body>
 </html>
