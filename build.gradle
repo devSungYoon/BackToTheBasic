@@ -11,15 +11,23 @@ repositories {
 }
 
 dependencies {
-
+    // TEST
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
-    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
-    // https://mvnrepository.com/artifact/commons-codec/commons-codec
-    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
-    // https://mvnrepository.com/artifact/org.mockito/mockito-all
     compile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
-    // https://mvnrepository.com/artifact/javax.servlet/jstl
+
+    // Servlet
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+
+    // Encryption
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+
+    // JSTL
     compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+    // Log
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+
 
 }
