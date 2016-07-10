@@ -15,6 +15,11 @@
         <url-pattern>/member</url-pattern>
     </servlet-mapping>-->
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/common/error/404error.jsp</location>
+    </error-page>
+
     <!-- UTF-8 ENCODING -->
     <filter>
         <filter-name>Encoding Filter</filter-name>
