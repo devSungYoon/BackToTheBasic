@@ -6,15 +6,28 @@
 
     <!-- Basic Servlet Config -->
     <!--<servlet>
-        <servlet-name>MemberController</servlet-name>
-        <servlet-class>com.artiveloper.study.member.MemberController</servlet-class>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>com.artiveloper.study.useremberController</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MemberController</servlet-name>
-        <url-pattern>/member</url-pattern>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/user</url-pattern>
     </servlet-mapping>-->
 
+    <!-- REST api -->
+    <servlet>
+        <servlet-name>jersey-servlet</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jersey-servlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ERROR PAGE -->
     <error-page>
         <error-code>404</error-code>
         <location>/WEB-INF/views/common/error/404error.jsp</location>

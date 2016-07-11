@@ -30,6 +30,12 @@ dependencies {
     compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
 
-    // https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api
+    // REST api
+    // https://mvnrepository.com/artifact/com.sun.jersey/jersey-server
+    compile group: 'com.sun.jersey', name: 'jersey-server', version: '1.19.1'
+    // https://mvnrepository.com/artifact/com.sun.jersey/jersey-core
+    compile group: 'com.sun.jersey', name: 'jersey-core', version: '1.19.1'
+    // https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet
+    compile group: 'com.sun.jersey', name: 'jersey-servlet', version: '1.19.1'
 
 }
