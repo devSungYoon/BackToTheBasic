@@ -90,9 +90,4 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-src/main/java/com/artiveloper/study/board/dao/
-src/main/java/com/artiveloper/study/board/service/
-src/main/java/com/artiveloper/study/member/dao/
-src/main/java/com/artiveloper/study/member/service/
-src/main/resources/
-src/test/resources/
+
